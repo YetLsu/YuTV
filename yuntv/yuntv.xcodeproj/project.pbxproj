@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AC86581B20AC8DDE00C13093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86581A20AC8DDE00C13093 /* AppDelegate.swift */; };
-		AC86581D20AC8DDE00C13093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86581C20AC8DDE00C13093 /* ViewController.swift */; };
 		AC86582020AC8DDE00C13093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC86581E20AC8DDE00C13093 /* Main.storyboard */; };
 		AC86582220AC8DDE00C13093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC86582120AC8DDE00C13093 /* Assets.xcassets */; };
 		AC86582520AC8DDE00C13093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC86582320AC8DDE00C13093 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		AC86581720AC8DDE00C13093 /* yuntv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yuntv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC86581A20AC8DDE00C13093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC86581C20AC8DDE00C13093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC86581F20AC8DDE00C13093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC86582120AC8DDE00C13093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC86582420AC8DDE00C13093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		AC86581920AC8DDE00C13093 /* yuntv */ = {
 			isa = PBXGroup;
 			children = (
+				AC86582C20AC950A00C13093 /* Classes */,
 				AC86581A20AC8DDE00C13093 /* AppDelegate.swift */,
-				AC86581C20AC8DDE00C13093 /* ViewController.swift */,
 				AC86581E20AC8DDE00C13093 /* Main.storyboard */,
 				AC86582120AC8DDE00C13093 /* Assets.xcassets */,
 				AC86582320AC8DDE00C13093 /* LaunchScreen.storyboard */,
 				AC86582620AC8DDE00C13093 /* Info.plist */,
 			);
 			path = yuntv;
+			sourceTree = "<group>";
+		};
+		AC86582C20AC950A00C13093 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC86582D20AC950A00C13093 /* Follow */,
+				AC86582E20AC950A00C13093 /* Home */,
+				AC86582F20AC950A00C13093 /* Live */,
+				AC86583020AC950A00C13093 /* Main */,
+				AC86583120AC950A00C13093 /* Profile */,
+				AC86583220AC950A00C13093 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AC86582D20AC950A00C13093 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		AC86582E20AC950A00C13093 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC86582F20AC950A00C13093 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		AC86583020AC950A00C13093 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AC86583120AC950A00C13093 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AC86583220AC950A00C13093 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC86581D20AC8DDE00C13093 /* ViewController.swift in Sources */,
 				AC86581B20AC8DDE00C13093 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,10 +316,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 96HHM726Q3;
 				INFOPLIST_FILE = yuntv/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niefan.yuntv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -278,10 +332,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 96HHM726Q3;
 				INFOPLIST_FILE = yuntv/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.niefan.yuntv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -304,6 +360,7 @@
 				AC86582B20AC8DDE00C13093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
